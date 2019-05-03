@@ -1,0 +1,9 @@
+class Sol:
+    def add_digit(self,num):
+        while(num>9):
+            num=sum([int(c) for c in str(num)])
+        return num
+
+if __name__ == '__main__':
+    p1=Sol()
+    print(p1.add_digit(38))
